@@ -1,0 +1,16 @@
+torch==2.5.1
+torchvision==0.20.1
+torchmetrics==1.7.0
+torchaudio==2.5.1
+timm==1.0.15 
+webdataset==0.2.86 
+torchdata==0.7.1 
+braceexpand==0.1.7 
+tokenizers==0.21.0 
+accelerate==1.5.2 
+transformers==4.51.0 
+diffusers==0.32.2 
+timm==1.0.15 
+qwen-vl-utils[decord]==0.0.10 
+bitsandbytes==0.45.5 
+opencv-python

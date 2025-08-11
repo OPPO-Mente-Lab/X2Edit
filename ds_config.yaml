@@ -1,0 +1,42 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: MULTI_GPU
+main_process_port: 14121
+downcast_bf16: 'no'
+gpu_ids: all
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 8
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+
+# compute_environment: LOCAL_MACHINE
+distributed_type: DEEPSPEED 
+deepspeed_config:
+  gradient_accumulation_steps: 1
+  # offload_optimizer_device: cpu
+  # offload_param_device: cpu
+  # zero3_init_flag: true
+  # zero3_save_16bit_model: true
+  # zero3_init_flag: true
+  # zero3_save_16bit_model: true
+  zero_stage: 2
+# gpu_ids: all
+# machine_rank: 0
+# main_process_ip: 127.0.0.1 #主机ip
+# main_process_port: 10086  # 端口
+# main_training_function: main
+# mixed_precision: 'bf16' # fp16 no  bf16等
+# num_machines: 1  #这个后面可以再配置启动命令中修改
+# num_processes: 8 # 这个指示的的是多机多卡的总卡数，而不是每台机器卡数，类似于ddp的rank
+# rdzv_backend: static
+# same_network: True
+# tpu_env: []
+# tpu_use_cluster: false
+# tpu_use_sudo: false
+# use_cpu: false

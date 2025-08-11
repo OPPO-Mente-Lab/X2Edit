@@ -19,6 +19,9 @@
 <sup>1</sup>OPPO AI Center, <sup>2</sup>Sun Yat-sen University, <sup>3</sup>Tsinghua University
 <br>
 
+## TODO
+- [ ] Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Image)** for training and inference
+
 ## Environment
 
 Prepare the environment, install the required libraries:
