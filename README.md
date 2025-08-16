@@ -19,8 +19,14 @@
 <sup>1</sup>OPPO AI Center, <sup>2</sup>Sun Yat-sen University, <sup>3</sup>Tsinghua University
 <br>
 
+
 ## TODO
 - [ ] Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Image)** for training and inference
+
+## X2Edit image generation results
+<div align="center">
+  <img src="assets/X2Edit images.jpg">
+</div>
 
 ## Environment
 
@@ -35,8 +41,9 @@ $ pip install -r requirements.txt
 
 Clone **[LaMa](https://github.com/advimman/lama.git)** to [`data_pipeline`](./data_pipeline) and rename it to [`lama`](./data_pipeline/lama). Clone **[SAM](https://github.com/facebookresearch/segment-anything.git)** and **[GroundingDINO](https://github.com/IDEA-Research/GroundingDINO.git)** to [`SAM`](./data_pipeline/SAM), and then rename them to [`segment_anything`](./data_pipeline/SAM/segment_anything) and [`GroundingDINO`](./data_pipeline/SAM/GroundingDINO)
 
+
 ## Data Construction
-![Workflows](./assets/dataset_detail.jpg "Workflows")
+(./assets/dataset_detail.jpg)
 
 X2Edit provides executable scripts for each data construction workflow shown in the figure. We organize the dataset using the **[WebDataset](https://github.com/webdataset/webdataset)** format. Please replace the dataset in the scripts. The following Qwen model can be selected from **[Qwen2.5-VL-72B](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct)**, **[Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)**, and **[Qwen2.5-VL-7B](https://huggingface.co/datasets/sysuyy/ImgEdit/tree/main/ImgEdit_Judge)**. In addition, we also use aesthetic scoring models for screening, please donwload **[SigLIP](https://huggingface.co/google/siglip-so400m-patch14-384)** and **[aesthetic-predictor-v2-5](https://github.com/discus0434/aesthetic-predictor-v2-5/raw/main/models/aesthetic_predictor_v2_5.pth)**, and then change the path in [`siglip_v2_5.py`](./data_pipeline/aesthetic_predictor_v2_5/siglip_v2_5.py).
 
@@ -122,5 +129,6 @@ $ python calculate_score_en_ch.py
 ## Acknowledgements 
 
 This code is built on the code from the [diffusers](https://github.com/huggingface/diffusers) and [EasyControl](https://github.com/Xiaojiu-z/EasyControl).
+
 
 
