@@ -20,8 +20,8 @@
 <br>
 
 
-## TODO
-- [ ] Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Image)** for training and inference
+## News
+- 2025/08/25 Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Image)** for training and inference
 
 ## X2Edit image generation results
 <div align="center">
@@ -64,6 +64,8 @@ Before executing the script, download **[Qwen3-8B](https://huggingface.co/Qwen/Q
 
 ```shell
 $ python infer.py --device cuda --pixel 1024 --num_experts 12 --base_path BASE_PATH --qwen_path QWEN_PATH --lora_path LORA_PATH --extra_lora_path EXTRA_LORA_PATH
+$ python infer_qwen.py --device cuda --pixel 1024 --num_experts 12 --base_path BASE_PATH --qwen_path QWEN_PATH --lora_path LORA_PATH --extra_lora_path EXTRA_LORA_PATH  ## for Qwen-Image backbone
+
 ```
 
 **device:** The device used for inference. default: `cuda`<br>
@@ -81,12 +83,14 @@ Then you can run:
 
    - **For 1024 resolution**  
      ```shell
-     bash train_1024.sh
+     bash training_script/train_1024.sh
+     bash training_script/train_qwen_x2edit_1024.sh  ## for Qwen-Image backbone
      ```
 
    - **For 512 resolution**  
      ```shell
-     bash train_512.sh
+     bash training_script/train_512.sh
+     bash training_script/train_qwen_x2edit_512.sh  ## for Qwen-Image backbone
      ```
 **Important parameters in script**<br>
 **rank:** The rank in LoRA. default: `64`<br>
@@ -129,6 +133,7 @@ $ python calculate_score_en_ch.py
 ## Acknowledgements 
 
 This code is built on the code from the [diffusers](https://github.com/huggingface/diffusers) and [EasyControl](https://github.com/Xiaojiu-z/EasyControl).
+
 
 
 
