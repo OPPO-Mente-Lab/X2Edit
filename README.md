@@ -20,13 +20,23 @@
 <br>
 
 
-## News
-- 2025/08/25 Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Imag)** for training and inference. **[Checkpoint](https://huggingface.co/OPPOer/X2Edit/tree/main/model_qwen_image)**
-
 ## X2Edit image generation results
 <div align="center">
   <img src="assets/X2Edit images.jpg">
 </div>
+
+
+## News
+- 2025/08/25 Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Imag)** for training and inference. **[Checkpoint](https://huggingface.co/OPPOer/X2Edit/tree/main/model_qwen_image)**
+
+### X2Edit image generation results with Qwen-Image
+<div align="center">
+  <img src="assets/qwen-image1.png">
+</div>
+<div align="center">
+  <img src="assets/qwen-image0.png">
+</div>
+
 
 ## Environment
 
@@ -133,6 +143,7 @@ $ python calculate_score_en_ch.py
 ## Acknowledgements 
 
 This code is built on the code from the [diffusers](https://github.com/huggingface/diffusers) and [EasyControl](https://github.com/Xiaojiu-z/EasyControl).
+
 
 
 
