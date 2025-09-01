@@ -145,6 +145,21 @@ $ python calculate_score_en_ch.py
 This code is built on the code from the [diffusers](https://github.com/huggingface/diffusers) and [EasyControl](https://github.com/Xiaojiu-z/EasyControl).
 
 
+## Citation
+
+🌟 If you find our work helpful, please consider citing our paper and leaving valuable stars
+
+```
+@misc{ma2025x2editrevisitingarbitraryinstructionimage,
+      title={X2Edit: Revisiting Arbitrary-Instruction Image Editing through Self-Constructed Data and Task-Aware Representation Learning}, 
+      author={Jian Ma and Xujie Zhu and Zihao Pan and Qirong Peng and Xu Guo and Chen Chen and Haonan Lu},
+      year={2025},
+      eprint={2508.07607},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.07607}, 
+}
+```
 
 
 
