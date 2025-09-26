@@ -27,7 +27,9 @@
 
 
 ## News
-- 2025/08/25 Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Imag)** for training and inference. **[Checkpoint](https://huggingface.co/OPPOer/X2Edit/tree/main/model_qwen_image)**
+- 2025/09/16: We release a dataset built using Qwen-Image and Qwen-Image-Edit. This sub-dataset specifically focuses on subject-driven generation with facial consistency—a key requirement for tasks requiring stable subject identity across generated content.
+  **[Asian-portrait](https://huggingface.co/datasets/OPPOer/X2Edit-Dataset/tree/main/X2Edit_data/qwen-image-edit-Asian-portrait)** and **[NonAsian-portrait](https://huggingface.co/datasets/OPPOer/X2Edit-Dataset/tree/main/X2Edit_data/qwen-image-edit-NonAsian-portrait)**
+- 2025/08/25: Support **[Qwen-Image](https://github.com/QwenLM/Qwen-Imag)** for training and inference. **[Checkpoint](https://huggingface.co/OPPOer/X2Edit/tree/main/model_qwen_image)**
 
 ### X2Edit image generation results with Qwen-Image
 <div align="center">
@@ -160,6 +162,7 @@ This code is built on the code from the [diffusers](https://github.com/huggingfa
       url={https://arxiv.org/abs/2508.07607}, 
 }
 ```
+
 
 
 
