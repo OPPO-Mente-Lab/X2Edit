@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>X2Edit</h1>
+  <h1>AAAI2026 X2Edit</h1>
 <a href='https://arxiv.org/abs/2508.07607'><img src='https://img.shields.io/badge/arXiv-2508.07607-b31b1b.svg'></a> &nbsp;
 <a href='https://huggingface.co/datasets/OPPOer/X2Edit-Dataset'><img src='https://img.shields.io/badge/🤗%20HuggingFace-X2Edit Dataset-ffd21f.svg'></a>
 <a href='https://huggingface.co/OPPOer/X2Edit'><img src='https://img.shields.io/badge/🤗%20HuggingFace-X2Edit-ffd21f.svg'></a>
@@ -162,6 +162,7 @@ This code is built on the code from the [diffusers](https://github.com/huggingfa
       url={https://arxiv.org/abs/2508.07607}, 
 }
 ```
+
 
 
 
