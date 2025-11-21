@@ -22,13 +22,8 @@
 
 ## X2Edit image generation results
 <div align="center">
-  <img src="assets/qwen-pruning.jpg">
+  <img src="assets/X2Edit images.jpg">
 </div>
-
-<div align="center">
-  <img src="assets/model.png">
-</div>
-
 
 ## News
 - 2025/09/16: We release a dataset built using Qwen-Image and Qwen-Image-Edit. This sub-dataset specifically focuses on subject-driven generation with facial consistency—a key requirement for tasks requiring stable subject identity across generated content.
@@ -166,6 +161,7 @@ This code is built on the code from the [diffusers](https://github.com/huggingfa
       url={https://arxiv.org/abs/2508.07607}, 
 }
 ```
+
 
 
 
