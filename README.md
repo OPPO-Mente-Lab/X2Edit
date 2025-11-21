@@ -22,7 +22,11 @@
 
 ## X2Edit image generation results
 <div align="center">
-  <img src="assets/X2Edit images.jpg">
+  <img src="assets/qwen-pruning.jpg">
+</div>
+
+<div align="center">
+  <img src="assets/model.png">
 </div>
 
 
@@ -162,6 +166,7 @@ This code is built on the code from the [diffusers](https://github.com/huggingfa
       url={https://arxiv.org/abs/2508.07607}, 
 }
 ```
+
 
 
 
